@@ -12,7 +12,10 @@ class MainWindow : public QMainWindow
 
   public slots:
     void on_modifyBtn_clicked();
+    void on_msgbox_clicked();
+    void on_filedlg_clicked();
+    void on_fontdlg_clicked();
+    void on_colordlg_clicked();
 
-  private:
-    Ui_MainWindow *ui;
+        private : Ui_MainWindow *ui;
 };
