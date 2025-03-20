@@ -16,6 +16,8 @@ class MainWindow : public QMainWindow
     void on_filedlg_clicked();
     void on_fontdlg_clicked();
     void on_colordlg_clicked();
+    void on_inputdlg_clicked();
+    void on_progressdlg_clicked();
 
         private : Ui_MainWindow *ui;
 };
