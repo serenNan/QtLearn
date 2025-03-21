@@ -5,11 +5,11 @@
 class Login : public QDialog
 {
     Q_OBJECT
-    
-public:
-    Login(QWidget* parent = nullptr);
+
+  public:
+    Login(QWidget *parent = nullptr);
     ~Login();
 
-private:
-    Ui_Login* ui;
+  private:
+    Ui_Login *ui;
 };
