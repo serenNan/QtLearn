@@ -10,6 +10,7 @@ public:
     ~MainWindow();
 
   signals:
+    // 告诉子线程要生成多少个随机数
     void starting(int num);
 
 private:
