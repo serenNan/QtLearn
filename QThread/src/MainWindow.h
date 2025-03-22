@@ -9,6 +9,9 @@ public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
+  signals:
+    void starting(int num);
+
 private:
     Ui_MainWindow* ui;
 };
