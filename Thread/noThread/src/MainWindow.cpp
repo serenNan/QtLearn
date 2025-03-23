@@ -1,8 +1,6 @@
 #include "MainWindow.h"
 
-MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent)
-    , ui(new Ui_MainWindow)
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui_MainWindow)
 {
     ui->setupUi(this);
 }
@@ -15,9 +13,9 @@ MainWindow::~MainWindow()
 void MainWindow::on_start_clicked()
 {
     QVector<int> list;
-    for (int i = 0; i < 100000; i++)
+    for (int i = 0; i < 1000000; i++)
     {
-        list.push_back(rand() % 100000);
+        list.push_back(rand() % 1000000);
     }
 
     for (int i = 0; i < list.size(); i++)
