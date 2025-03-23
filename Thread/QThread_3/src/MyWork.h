@@ -1,15 +1,15 @@
 #pragma once
-#include <QThread>
+#include <QObject>
 #include <QVector>
 
-class MyThread : public QThread
+class MyWork : public QObject
 {
     Q_OBJECT
   public:
-    explicit MyThread(QObject *parent = nullptr);
+    explicit MyWork(QObject *parent = nullptr);
 
-  protected:
-    void run();
+    // 工作函数
+    void working();
 
   signals:
     // 自定义信号, 传递数据

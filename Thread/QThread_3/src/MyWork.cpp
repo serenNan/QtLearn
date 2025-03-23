@@ -1,9 +1,10 @@
-#include "Mythread.h"
+#include "MyWork.h"
 #include <QDebug>
+#include <QThread>
 
-MyThread::MyThread(QObject *parent) : QThread(parent) {}
+MyWork::MyWork(QObject *parent) : QObject(parent) {}
 
-void MyThread::run()
+void MyWork::working()
 {
     qDebug() << "当前线程对象的地址: " << QThread::currentThread();
 
